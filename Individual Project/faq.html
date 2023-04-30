@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZAF Housing</title>
+    <link rel="stylesheet" href="faqstyles.css" />
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+  </head>
+
+  <body>
+
+    <section id="landing">
+
+      <nav>
+        <a href="index.html">
+          <img
+            src="./assets/zaflogo.png"
+            class="ZAFlogo_img"
+            alt="The company's logo, Created my logo at LogoMakr.com/app"
+          />
+        </a>
+
+        <ul class="nav__link--list">
+          <li class="nav__link">
+            <a
+              href="discover.html"
+              class="nav__link--anchor nav__link-effect nav__hover-effect"
+              >Discover
+            </a>
+          </li>
+
+          <li class="nav__link">
+            <a
+              href="about.html"
+              class="nav__link--anchor nav__link-effect nav__hover-effect"
+              >About
+            </a>
+          </li>
+
+          <li class="nav__link">
+            <a
+              href="faq.html"
+              class="nav__link--anchor nav__link-effect nav__hover-effect"
+              >FAQs
+            </a>
+          </li>
+
+          <li class="nav__link" onclick="toggleContact()">
+            <a
+              href="#"
+              class="nav__link--anchor nav__link-effect nav__hover-effect"
+              >Contact
+            </a>
+          </li>
+
+          <li class="nav__link">
+            <a href="#" class="nav__link--anchor nav__link--anchor-primary"
+              >Login
+            </a>
+          </li>
+        </ul>
+
+        <button class="btn__menu" onclick="openMenu()">
+          <i class="fas fa-bars"></i>
+        </button>
+        
+          <div class="menu__backdrop">
+
+            <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                <i class="fas fa-times"></i>
+            </button>
+
+            <ul class="menu__links">
+                <li class="menu__list">
+                  <a href="#" class="menu__link" onclick="closeMenu()">Login</a>
+                </li>
+                <li class="menu__list">
+                    <a href="discover.html" class="menu__link" onclick="closeMenu()">Discover</a>
+                </li>
+                <li class="menu__list">
+                    <a href="about.html" class="menu__link" onclick="closeMenu()">About</a>
+                </li>
+                <li class="menu__list">
+                  <a href="faq.html" class="menu__link" onclick="closeMenu()">FAQs</a>
+                </li>
+                <li class="menu__list">
+                  <a href="#" class="menu__link" onclick="toggleContact()">Contact</a>
+                </li>
+            </ul>
+
+          </div>
+
+      </nav>
+
+      <header>
+
+        <div class="header__container">
+          
+            <div class="header__description">
+
+                <h1>FAQs</h1>
+
+                <h2>How can we help you?</h2>
+                
+                <div class="faq__section">
+
+                  <div class="faq__popular">
+
+                    <h3 class="faq--heading">Popular FAQs</h3>
+
+                    <h3>How do I sign into ZAF Housing?</h3>
+                    <p class="faq--para">
+                        To <a href="#">login</a> to this website, you must first be a tenant of ZAF Housing. If 
+                        you are a registered tenant of the company, an E-mail or text message would have been 
+                        sent to you with your login details. If you didn't recieve these details and are an 
+                        existing tenant, please contact us <a href="#" onclick="toggleContact()">here</a>.
+                    </p>
+
+                    <h3>How do I know my personal details are safe?</h3>
+                    <p class="faq--para-2">
+                        The details you have shared with the company are only able to be viewed by yourself and 
+                        the company. These details are stored on a secure database. The company uses these 
+                        details to see if rent has been paid and to contact you directly regarding any issues.
+                    </p>
+
+                    <h3>How do I become a tenant of ZAF Housing?</h3>
+                    <p class="faq--para-2">
+                        Properties that we have available are listed for selection in our 
+                        <a href="discover.html">Discover</a> section of this website. If a property interests you, click 
+                        the interested button to register your interest.
+                    </p>
+
+                    <h3>Why is the company not responding to me?</h3>
+                    <p class="faq--para-2">
+                        If you have registered interest in a property, or are an existing tenant and are in need
+                        of urgent help, and have not been given an immediate reponse then please wait 1-2 working
+                        days for one as we may be busy with multiple clients at once. If you are an existing 
+                        tenant, you are able to <a href="#">login</a> to this website and directly contact staff 
+                        for help.
+                    </p>
+                    
+                  </div>
+
+                  <div class="faq__space">
+                    
+                  </div>
+
+                  <div class="faq__general">
+
+                    <h3 class="faq--heading">Tenant FAQs</h3>
+
+                    <h3>There is a major water leak in my home, what do I do?</h3>
+                    <p class="faq--para">
+                        There is a <a href="https://handymantameside.com/what-is-a-stopcock/" target="_blank">
+                        stopcock</a> located in every home, either under the stairs or under the sink in the 
+                        kitchen sink. Turn this stopcock clockwise to shut off the water supply in the home. Then 
+                        proceed to contact us immediately. If the water leak is happening during late night, after turning
+                        off all the water using the stopcock, contact us in the morning.
+                    </p>
+
+                    <h3>I am having electricity related problems, what should I do?</h3>
+                    <p class="faq--para-2">
+                        If the electricity in your home is malfunctioning, please do not attempt to fix this
+                        yourself due to hazards. <a href="#" onclick="toggleContact()">Contact</a> us and we will have an electrician sent
+                        over to resolve the issue.
+                    </p>
+
+                    <h3>My hot water is not working / boiler issues?</h3>
+                    <p class="faq--para-2">
+                        Boiler's are a very delicate item in every home and need to replaced every 15 years.
+                        If your boiler is not performing correctly it may need to be replaced. <a href="#" onclick="toggleContact()">Contact</a>
+                        us and we can resolve this issue for you.
+                    </p>
+
+                    <h3>I am not satisfied with an object inside of my home (e.g., fridge, washing machine etc.)</h3>
+                    <p class="faq--para-2">
+                        Important objects in every home have problems from time to time. Thanks to the ZAF Housing
+                        home supply we are able to replace any objects you have issues with. You are able to 
+                        <a href="#" onclick="toggleContact()">contact</a> us for these types of matters.
+                    </p>
+                    
+                  </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="mainpage__contact">
+
+          <i class="fas fa-times contact__exit click" onclick="toggleContact()"></i>
+
+          <div class="contact__form contact__description">
+
+            <h3 class="contact__title contact__title--description">
+              Send us an E-mail!
+            </h3>
+
+            <h4 class="contact__sub-title contact__sub-title--description">
+              We are working hard to respond to every question you may have.
+            </h4>
+
+            <p class="contact__para">
+              We are available to answer any <b class="text--green">questions</b> you may have regarding
+              our <b class="text--green">company</b>, whether you are a <b class="text--green">tenant</b> or someone who is interested
+              in <b class="text--green">becoming one</b>.
+              <br>
+              Inquire <b class="text--green">here</b> about available properties, <b class="text--green">future</b> housing we intend
+              to put up for rent, to voice a <b class="text--green">complaint</b> or <b class="text--green">concern</b>, and to find out
+              <b class="text--green">more</b> about us.
+            </p>
+
+          </div>
+
+          <div class="contact__form contact__submit">
+
+            <!-- <h3 class="contact__title contact__title--contact">
+              Contact us using this form:
+            </h3> -->
+
+            <form id="contact__information" onsubmit="contact(event)">
+              
+              <div class="info__item">
+
+                <label class="info__item--label">Name</label>
+                <input class="input" name="user_name" type="text" required></input>
+
+              </div>
+
+              <div class="info__item">
+
+                <label class="info__item--label">Email</label>
+                <input class="input" name="user_email" type="email" required></input>
+
+              </div>
+
+              <div class="info__item">
+
+                <label class="info__item--label">Inquiry</label>
+                <textarea class="input" name="user_inquiry" type="text" required></textarea>
+
+              </div>
+
+              <button id="contact__submit" class="form__submit">
+                Submit
+              </button>
+
+            </form>
+
+            <div class="contact__overlay contact__overlay--loading">
+
+              <i class="fas fa-spinner"></i>
+
+            </div>
+
+            <div class="contact__overlay contact__overlay--complete">
+              Your inquiry has been submitted. Responses usually take around 1-3 working days.
+            </div>
+            
+          </div>
+
+        </div>
+
+      </header>
+
+      <a href="#">
+
+        <button class="email__icon click" onclick="toggleContact()">
+
+          <i class="fas fa-envelope"></i>
+
+        </button>
+
+      </a>
+      
+      <button class="yinyang__icon click" onclick="toggleDarkMode()">
+        <i class="fas fa-yin-yang"></i>
+      </button>
+
+    </section>
+
+    <main>
+      
+    </main>
+
+    <footer>
+
+      <div class="container">
+
+        <div class="row row__column">
+
+          <a href="index.html">
+            <figure class="footer__logo">
+              <img class="footer__logo--img" src="assets/zaflogo.png" alt="">
+            </figure>
+          </a>
+
+          <div class="footer__list">
+            <a href="discover.html" class="footer__link">Discover</a>
+            <a href="about.html" class="footer__link">About</a>
+            <a href="faq.html" class="footer__link">FAQs</a>
+            <a href="#" class="footer__link" onclick="toggleContact()">Contact</a>
+          </div>
+
+          <div class="footer__copyright">Copyright &copy; 2023 ZAF Housing</div>
+
+        </div>
+
+      </div>
+
+    </footer>
+
+  </body>
+  
+</html>

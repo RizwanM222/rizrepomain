@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZAF Housing</title>
+    <link rel="stylesheet" href="aboutstyles.css" />
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function(){
+        emailjs.init("EauK6lZM623AA1VCY");
+      })();
+    </script>
+  </head>
+
+  <body>
+
+    <section id="landing">
+
+      <nav>
+        <a href="index.html">
+          <img
+            src="./assets/zaflogo.png"
+            class="ZAFlogo_img"
+            alt="The company's logo, Created my logo at LogoMakr.com/app"
+          />
+        </a>
+
+        <ul class="nav__link--list">
+          <li class="nav__link">
+            <a
+              href="discover.html"
+              class="nav__link--anchor nav__link-effect nav__hover-effect"
+              >Discover
+            </a>
+          </li>
+
+          <li class="nav__link">
+            <a
+              href="about.html"
+              class="nav__link--anchor nav__link-effect nav__hover-effect"
+              >About
+            </a>
+          </li>
+
+          <li class="nav__link">
+            <a
+              href="faq.html"
+              class="nav__link--anchor nav__link-effect nav__hover-effect"
+              >FAQs
+            </a>
+          </li>
+
+          <li class="nav__link" onclick="toggleContact()">
+            <a
+              href="#"
+              class="nav__link--anchor nav__link-effect nav__hover-effect"
+              >Contact
+            </a>
+          </li>
+
+          <li class="nav__link">
+            <a href="#" class="nav__link--anchor nav__link--anchor-primary"
+              >Login
+            </a>
+          </li>
+        </ul>
+
+        <button class="btn__menu" onclick="openMenu()">
+          <i class="fas fa-bars"></i>
+        </button>
+        
+          <div class="menu__backdrop">
+
+            <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                <i class="fas fa-times"></i>
+            </button>
+
+            <ul class="menu__links">
+                <li class="menu__list">
+                  <a href="#" class="menu__link" onclick="closeMenu()">Login</a>
+                </li>
+                <li class="menu__list">
+                    <a href="discover.html" class="menu__link" onclick="closeMenu()">Discover</a>
+                </li>
+                <li class="menu__list">
+                    <a href="about.html" class="menu__link" onclick="closeMenu()">About</a>
+                </li>
+                <li class="menu__list">
+                  <a href="faq.html" class="menu__link" onclick="closeMenu()">FAQs</a>
+                </li>
+                <li class="menu__list">
+                  <a href="#" class="menu__link" onclick="toggleContact()">Contact</a>
+                </li>
+            </ul>
+
+          </div>
+
+      </nav>
+
+      <header>
+
+        <div class="header__container">
+          
+            <div class="header__description">
+
+                <h1>About Us</h1>
+                
+                <p class="about--para">
+                    Located in London, <a href="index.html"><span class="text--green"> ZAF Housing </span></a> is a housing 
+                    organisation. The company's headquarters are in Wembley, London, and it was founded in 1995. Our major 
+                    objective is to offer dependable, high-quality accommodation for rent at the most affordable rates.
+                </p>
+
+                <p class="about--para-2">
+                    We were able to reach a broader audience thanks to our company's reputation for offering top-notch 
+                    properties and top-notch customer service, but we wanted to develop a more simplified and effective 
+                    procedure for those looking for a new home.
+                </p>
+
+                <p class="about--para-2">
+                    Our new housing website aims to provide consumers an easy platform with a number 
+                    of features that will make it simple for them to search for, evaluate, and choose the ideal house. 
+                    If you are a first-time renter, we are convinced that our housing website will assist you in 
+                    locating the ideal house that satisfies your requirements and beyond your expectations.
+                </p>
+
+                <p class="about--para-2">
+                    Tenants may now quickly access their accounts and examine their current rent 
+                    amount and payment history thanks to the introduction of this website. This enables them to keep 
+                    track of their payments and ensure they are up to date. Tenants may now also directly contact the 
+                    company through the website for any issues they may be facing.
+                </p>
+                
+                <p class="about--para-2">
+                    Have fun on your journey with <span class="text--green">ZAF Housing</span>!
+                </p>
+
+            </div>
+
+            <div class="about--buttons">
+                <a href="discover.html">
+                    <button class="about--btn">Browse Properties</button>
+                </a>
+
+                <h3 class="about--button-space">Or</h3>
+    
+                <a href="#">
+                    <button class="about--btn">Log In</button>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="mainpage__contact">
+
+          <i class="fas fa-times contact__exit click" onclick="toggleContact()"></i>
+
+          <div class="contact__form contact__description">
+
+            <h3 class="contact__title contact__title--description">
+              Send us an E-mail!
+            </h3>
+
+            <h4 class="contact__sub-title contact__sub-title--description">
+              We are working hard to respond to every question you may have.
+            </h4>
+
+            <p class="contact__para">
+              We are available to answer any <b class="text--green">questions</b> you may have regarding
+              our <b class="text--green">company</b>, whether you are a <b class="text--green">tenant</b> or someone who is interested
+              in <b class="text--green">becoming one</b>.
+              <br>
+              Inquire <b class="text--green">here</b> about available properties, <b class="text--green">future</b> housing we intend
+              to put up for rent, to voice a <b class="text--green">complaint</b> or <b class="text--green">concern</b>, and to find out
+              <b class="text--green">more</b> about us.
+            </p>
+
+          </div>
+
+          <div class="contact__form contact__submit">
+
+            <!-- <h3 class="contact__title contact__title--contact">
+              Contact us using this form:
+            </h3> -->
+
+            <form id="contact__information" onsubmit="contact(event)">
+              
+              <div class="info__item">
+
+                <label class="info__item--label">Name</label>
+                <input class="input" name="user_name" type="text" required></input>
+
+              </div>
+
+              <div class="info__item">
+
+                <label class="info__item--label">Email</label>
+                <input class="input" name="user_email" type="email" required></input>
+
+              </div>
+
+              <div class="info__item">
+
+                <label class="info__item--label">Inquiry</label>
+                <textarea class="input" name="user_inquiry" type="text" required></textarea>
+
+              </div>
+
+              <button id="contact__submit" class="form__submit">
+                Submit
+              </button>
+
+            </form>
+
+            <div class="contact__overlay contact__overlay--loading">
+
+              <i class="fas fa-spinner"></i>
+
+            </div>
+
+            <div class="contact__overlay contact__overlay--complete">
+              Your inquiry has been submitted. Responses usually take around 1-3 working days.
+            </div>
+            
+          </div>
+
+        </div>
+
+      </header>
+
+      <a href="#">
+
+        <button class="email__icon click" onclick="toggleContact()">
+
+          <i class="fas fa-envelope"></i>
+
+        </button>
+
+      </a>
+      
+      <button class="yinyang__icon click" onclick="toggleDarkMode()">
+        <i class="fas fa-yin-yang"></i>
+      </button>
+
+    </section>
+
+    <main>
+      
+    </main>
+
+    <footer>
+
+      <div class="container">
+
+        <div class="row row__column">
+
+          <a href="index.html">
+            <figure class="footer__logo">
+              <img class="footer__logo--img" src="assets/zaflogo.png" alt="">
+            </figure>
+          </a>
+
+          <div class="footer__list">
+            <a href="discover.html" class="footer__link">Discover</a>
+            <a href="about.html" class="footer__link">About</a>
+            <a href="faq.html" class="footer__link">FAQs</a>
+            <a href="#" class="footer__link" onclick="toggleContact()">Contact</a>
+          </div>
+
+          <div class="footer__copyright">Copyright &copy; 2023 ZAF Housing</div>
+
+        </div>
+
+      </div>
+
+    </footer>
+
+  </body>
+  
+</html>

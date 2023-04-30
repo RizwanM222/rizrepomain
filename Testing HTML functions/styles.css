@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    border: 1px solid lightgray;
+    padding: 80px 24px 80px 24px;
+}
+
+.row {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto -24px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    border: 1px solid lightgray;
+    margin-bottom: 24px;
+}
+
+.box-wrapper {
+    width: 45%;
+}
+
+.small-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-large {
+    width: 45%;
+}
+
+.box-small {
+    height: 50px;
+}
+
+.box-tiny {
+    width: 30%;
+    height: 50px;
+}
+
+
+
